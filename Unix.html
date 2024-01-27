@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Presentación</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, p {
+            color: #64575700;
+        }
+        h1{
+            color: rgb(165, 194, 194);
+        }
+        p{
+            color: rgb(138, 135, 135);
+            text-align: justify;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sistena Operativo Unix</h1>
+    </header>
+
+    <section>
+        <center><h2>HSTORIA Y EVOLUCION DE UNIX</h2></center>
+        <p>Unix fue concebido en los laboratorios Bell de AT&amp;T por un grupo de desarrolladores liderado por Ken Thompson y Dennis Ritchie. La década de 1960 marcó los primeros esfuerzos, con la creación de herramientas como el ensamblador B y el sistema operativo Multics.</p>
+        <h4>BSD y Variantes (1977 en adelante):</h4>
+        <p>La Universidad de California, Berkeley, desarrolló el proyecto BSD (Berkeley Software Distribution) como una variante de Unix con mejoras significativas. BSD se convirtió en un sistema independiente y sirvió como base para sistemas operativos como FreeBSD y OpenBSD.</p>
+        <h4>Guerra de Sistemas Operativos (1980-1990):</h4>
+        <p>Durante la década de 1980, Unix compitió con otros sistemas operativos, como VMS (Virtual Memory System) de Digital Equipment Corporation y las minicomputadoras. La accesibilidad y la portabilidad de Unix jugaron un papel crucial en su adopción.</p>
+        <h4>GNU y el Movimiento de Código Abierto (1983 en adelante):</h4>
+        <p>Richard Stallman inició el Proyecto GNU para desarrollar un sistema operativo compatible con Unix pero completamente de código abierto. Aunque el kernel GNU Hurd no tuvo tanto éxito, el sistema operativo GNU se combinó con el kernel Linux para formar una solución completa.</p>
+        <h4>Linux (1991 en adelante):</h4>
+        <p>Linus Torvalds lanzó el kernel Linux en 1991, y su combinación con el sistema GNU creó una alternativa gratuita y de código abierto a Unix. La popularidad de Linux ha crecido enormemente, especialmente en entornos de servidor y sistemas embebidos.</p>
+    </section>
+
+    <section>
+        <center><h2>Estructura del Sistema de Archivos</h2></center>
+        <h4>Organización Jerárquica:</h4>
+        <p>El sistema de archivos de Unix sigue una estructura jerárquica con un directorio raíz ("/") que contiene subdirectorios como /bin, /etc, /home, entre otros. Esta organización facilita la ubicación y gestión de archivos.</p>
+        <h4>Sistema de Archivos Virtuales (VFS):</h4>
+        <p>VFS es una abstracción que permite que varios sistemas de archivos coexistan, independientemente de su implementación subyacente. Esto facilita la compatibilidad y la manipulación de diferentes tipos de sistemas de archivos.</p>
+        <h4>Montaje y Desmontaje de Sistemas de Archivos:</h4>
+        <p>Unix permite montar y desmontar sistemas de archivos en puntos específicos del sistema de archivos. El comando <code>mount</code> se utiliza para asociar un sistema de archivos con un directorio, mientras que <code>umount</code> se utiliza para desmontarlo.</p>
+        <h4>Sistemas de Archivos Comunes:</h4>
+        <p>Unix admite varios sistemas de archivos, cada uno con sus propias características. Algunos ejemplos incluyen:</p>
+        <ul><li><strong>ext4:</strong> Sistema de archivos extendido 4, común en sistemas Linux.</li><li><strong>ZFS:</strong> Sistema de archivos de Zettabyte File System, conocido por su integridad de datos y capacidades avanzadas de almacenamiento.</li></ul>
+
+    </section>
+
+    <section>
+        <center><h3>Interfaz de Usuario y Shell</h3></center>
+        <h4>Introducción a la Interfaz de Línea de Comandos:</h4>
+        <p>La interfaz de línea de comandos (CLI) es una parte integral de Unix. Los usuarios interactúan con el sistema ingresando comandos en un shell, como Bash o Zsh. La CLI proporciona flexibilidad y automatización a través de scripts.</p>
+        <h4>Funciones y Tipos de Shells:</h4>
+        <p>Los shells son intérpretes de comandos que procesan las entradas del usuario y ejecutan programas. Bash (Bourne Again SHell) es uno de los más comunes, pero existen otros como Zsh, Ksh y Fish, cada uno con sus propias características.</p>
+        <h4>Personalización de la Línea de Comandos y Scripts:</h4>
+        <p>Los usuarios pueden personalizar su entorno de línea de comandos mediante la configuración de archivos como <code>.bashrc</code> o <code>.zshrc</code>. Además, la creación de scripts permite automatizar tareas y mejorar la eficiencia del trabajo diario.</p>
+    </section>
+
+    <section>
+        <center><h3>Gestión de Procesos</h3></center>
+        <h4>Conceptos de Procesos en Unix:</h4>
+        <p>Un proceso en Unix es una instancia en ejecución de un programa. Cada proceso tiene un identificador único (PID), y el sistema operativo gestiona su ejecución y recursos asociados.</p>
+        <h4>Comandos para Administrar Procesos:</h4>
+        <ul><li><strong>ps:</strong> Muestra información sobre los procesos en ejecución.</li><li><strong>kill:</strong> Envía señales a un proceso para controlar su ejecución.</li><li><strong>top y htop:</strong> Muestran información en tiempo real sobre el uso del sistema y los procesos.</li></ul>
+        <h4>Programación de Tareas con cron y at:</h4>
+        <ul><li><strong>cron:</strong> Permite la ejecución programada de tareas en intervalos regulares.</li><li><strong>at:</strong> Programa la ejecución de tareas en un momento específico.</li></ul>
+    </section>
+
+    <section>
+        <center><h3>Seguridad y Permisos</h3></center>
+        <h4>Modelo de Permisos de Unix:</h4>
+        <p>Los permisos en Unix controlan el acceso a archivos y directorios. Cada archivo tiene propietario, grupo y permisos para el propietario, el grupo y otros usuarios.</p>
+        <h4>Gestión de Usuarios y Grupos:</h4>
+        <ul><li><strong>useradd y userdel:</strong> Añaden y eliminan usuarios.</li><li><strong>groupadd y groupdel:</strong> Añaden y eliminan grupos.</li><li><strong>passwd:</strong> Cambia la contraseña de un usuario.</li></ul>
+        <h4>Acceso Remoto y Seguridad en la Red:</h4>
+        <ul><li><strong>ssh:</strong> Protocolo seguro para acceder a sistemas remotos.</li><li><strong>iptables y firewalld:</strong> Herramientas para configurar reglas de firewall.</li></ul>
+    </section>
+
+    <section>
+        <center><h2>Jose Adrian Vargas Vargas</h2></center>
+        <center><h2>2 B Informatica</h2></center>
+    </section>
+
+</body>
+</html>
